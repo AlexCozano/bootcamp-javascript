@@ -16,13 +16,22 @@ div {
     margin 10px 40px 80px 200px
 }
 
+/* ------------------------------------ */
+
+.margen_centrado {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ancho fijo */
 .anchos {
     width: 500px;
 }
 
-/* ancho relativo */
 
+/* ancho relativo */
 .ancho_relativo {
         width: 50%;
-}
+ }
 
