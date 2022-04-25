@@ -6,3 +6,28 @@
 div h3 {
     color: orange;
 }
+
+
+ul li a {
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-top-width: 1px;
+    border-style: solid;
+}
+
+
+a 
+{
+    background-color: blue;
+}
+
+div > p {
+    color: chartreuse;
+}
+
+a, p, ol {
+    border-color: blue;
+    border-top-width: 1px;
+    border-style: solid;
+}
