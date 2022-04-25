@@ -13,19 +13,21 @@
         color: white;
     }
 
+    .divCentrado{
+        margin: auto;
+        width: 500px;
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        }
+
     .div3{
         position: relative;
+        background-color: darkcyan;
+        color: white;
         width: 300px;
         top: 50px;
         left: 100px;
-        background-color: darkcyan;
-        color: white;
-        }
+         }
 
-        .divCentrado{
-            margin: auto;
-            width: 500px;
-            border-width: 2px;
-            border-color: black;
-            border-style: solid;
-            }
+    
