@@ -1,0 +1,16 @@
+div {
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.margenes {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom:40px;
+    margin-left: 40px;
+}
+
+.margen_abreviado {
+    margin 40px 40px 40px 40px
+}
