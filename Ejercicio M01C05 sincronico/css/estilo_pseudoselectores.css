@@ -3,8 +3,9 @@ p {
     color: red;
 }
 
-div:hover{
-    border-color: yellow;
-    border-width: 2px;
-    border-style: solid;
+p:hover{
+    border-color: blue;
+    color: yellow;
+    
 }
+
