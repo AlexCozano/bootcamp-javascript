@@ -4,6 +4,7 @@ div {
     border-style: solid;
 }
 
+/* estilos equivalentes */
 .margenes {
     margin-top: 10px;
     margin-right: 40px;
@@ -12,5 +13,16 @@ div {
 }
 
 .margen_abreviado {
-    margin 40px 40px 40px 40px
+    margin 10px 40px 80px 200px
 }
+
+.anchos {
+    width: 500px;
+}
+
+/* ancho relativo */
+
+.ancho_relativo {
+        width: 50%;
+}
+
