@@ -27,3 +27,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.contenedro_flex {
+    display: flex;
+    flex-direction: column;
+}
