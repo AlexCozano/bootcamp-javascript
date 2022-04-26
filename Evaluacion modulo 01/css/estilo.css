@@ -11,3 +11,19 @@
     border-radius: 25%;
     padding: 10px, 10px, 10px, 10px;
 }
+
+.redesociales {
+    display: inline-flex;
+}
+
+.form-group {
+
+}
+
+
+.body {
+    background-color: rgb(151, 151, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
