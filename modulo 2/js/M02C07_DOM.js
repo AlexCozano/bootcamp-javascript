@@ -18,5 +18,5 @@ primerParrafo.innerHTML="este texto fue cambiado con javascript";
 var parrafos = document.querySelectorall("p");
 parrafos[1].className="estilo2";
 for (i=0;i<parrafos.length;i++){
-    parrafos[i].innerHTML="------------------------";
+    parrafos[i].innerText="------------------------";
 }
