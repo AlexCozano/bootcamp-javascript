@@ -1,6 +1,6 @@
 //---------------------clases---------------
 class auto {
-    constructor(marca,modelo, anio){
+    constructor(marca,modelo,anio){
         this.marca=marca;
         this.modelo=modelo;
         this.anio=anio;
@@ -8,8 +8,8 @@ class auto {
 }
 
 let auto1 = new auto("audi","TT",2003);
-let auto2 = new Auto("mazda", "3", 2020);
-let auto3 = new Auto("mitsubishi", "montero", 2012);
+let auto2 = new auto("mazda", "3", 2020);
+let auto3 = new auto("mitsubishi","montero", 2012);
 
 console.log(auto1.marca);
 console.log(auto2,marca);
@@ -44,3 +44,36 @@ console.log("nombre del usuario (con corchete): " + usuario1["nombre"]);
 usuario1.activo=false;
 console.log(usuario1);
 console.log(usuario2); 
+//llamar a una propiedad que no está definida
+console.log(usuario1.login);
+//eliminar una propiedad
+delete usuario1.activo;
+console.log(usuario1);
+delete usuario1.password;
+console.log(usuario1);
+console.log(usuario2);
+
+//Redefinir la clase rectangulo para que entregue el area y el perimetro
+class rectangulo2{
+    constructor(largo,ancho){
+        this.largo=largo;
+        this.ancho=ancho;
+    }
+    area= function(){
+        return this.largo+this.ancho;
+    }
+    perimetri=function(){
+        return 2(this.largo+this.ancho);
+    }
+}
+
+let rect1=new Rectangulo2(10,20);
+console.log(rect1.area());
+rect1.ancho=30;
+console.log(rect1.area());
+
+//crear un formulario de registro y al lado (o abajo) crear una lista con los usuarios registrados.
+//cada vez que se registra un usuario(en el formulario), se debe crear el objeto para este y 
+//agregarlo a la lista de 
+
+
