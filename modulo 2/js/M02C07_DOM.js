@@ -14,3 +14,9 @@ var primerParrafo=document.querySelector(".estilo1");
 //var primerParrafo=document.querySelector("p");
 //var primerParrafo=document.querySelector("#contenido p");
 primerParrafo.innerHTML="este texto fue cambiado con javascript";
+
+var parrafos = document.querySelectorall("p");
+parrafos[1].className="estilo2";
+for (i=0;i<parrafos.length;i++){
+    parrafos[i].innerHTML="------------------------";
+}
