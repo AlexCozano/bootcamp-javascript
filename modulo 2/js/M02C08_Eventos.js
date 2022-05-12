@@ -33,8 +33,38 @@ boton.addEventListener("click",(e)=>{
 //1.- cargar el elemento que quiero modificar
 var imagen = document.querySelector("img");
 //2.- crear función
-function cambiarFoto(){
+/* function cambiarFoto(){
     imagen.setAtribute("src","img/img2.jpg");
 }
 //3.- agregar a evento
-Imagen.addEventListener("click",cambiarFoto);
+imagen.addEventListener("click",cambiarFoto);
+ */
+//--------------------------------------------------------
+imagen = document.querySelector("img")
+imagen.addEventListener("click", function(){
+    imagen.setAttribute("src","img/img2.jpg");
+})
+
+//cambiar color de fondo de un parrafo cuando se pase
+//el mouse sobre el volver al color normal
+//usando:
+//mouseover
+//mouseout
+//1.- cargar el parrafo
+var parrafo = document.querySelector("p");
+//2.- agregar el evento
+parrafo.addEventListener("mouseover",function(){
+    parrafo.style.backgroundColor="blue";
+    parrafo.style.color="yellow";
+});
+parrafo.addEventListener("mouseout",function(){
+    parrafo.style.backgroundColor="white";
+    parrafo.style.color="black";
+})
+
+//---------------------------------------------
+var elementosLi = document.querySelectorAll("li")
+
+for(i=0;i<elementosLi.length;i++){
+
+}
