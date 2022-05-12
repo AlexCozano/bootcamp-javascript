@@ -72,8 +72,11 @@ console.log(rect1.area());
 rect1.ancho=30;
 console.log(rect1.area());
 
-//crear un formulario de registro y al lado (o abajo) crear una lista con los usuarios registrados.
-//cada vez que se registra un usuario(en el formulario), se debe crear el objeto para este y 
-//agregarlo a la lista de 
+//crear un formulario de registro y al lado (o abajo) +
+//crear una lista con los usuarios registrados.
+//cada vez que se registra un usuario(en el formulario), 
+//se debe crear el objeto para este y 
+//agregarlo a la lista de ¿?
+
 
 
