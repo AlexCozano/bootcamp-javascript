@@ -17,6 +17,9 @@ boton.addEventListener("click",
         document.body.style.backgroundColor="Black";
         document.body.style.color="white";
         console.log(infoDelEvento);
+       if(infoDelEvento.type=="click"){
+           alert("se hizo click");
+       }
     }
 )
 
@@ -26,3 +29,12 @@ boton.addEventListener("click",(e)=>{
     document.body.style.color=white;
 }); */
 
+//cambiar la foto al hacer click sobre ella
+//1.- cargar el elemento que quiero modificar
+var imagen = document.querySelector("img");
+//2.- crear función
+function cambiarFoto(){
+    imagen.setAtribute("src","img/img2.jpg");
+}
+//3.- agregar a evento
+Imagen.addEventListener("click",cambiarFoto);
