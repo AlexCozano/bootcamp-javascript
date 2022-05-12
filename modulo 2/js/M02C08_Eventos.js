@@ -67,9 +67,9 @@ var elementosLi = document.querySelectorAll("li");
 
 for(i=0;i<elementosLi.length;i++){
     elementosLi[i].addEventListener("mouseover",function(){
-        elementosLi[i].style.color="red";
+        this.style.color="red";
     });
     elementosLi[i].addEventListener("mouseout",function(){
-        elementosLi[i].style.color="black";
+        this.style.color="black";
     })
 }
