@@ -1,5 +1,5 @@
 function cambiarFondo(){
-    document.body.style.background="black;
+    document.body.style.background="black";
     document.body.style.color="white";
 }
 
@@ -15,7 +15,7 @@ var boton = document.querySelector ("#boton1");
 boton.addEventListener("click",
     function(infoDelEvento){
         document.body.style.backgroundColor="Black";
-        document.body.style.color=white;
+        document.body.style.color="white";
         console.log(infoDelEvento);
     }
 )
