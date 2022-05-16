@@ -15,3 +15,15 @@ btn.addEventListener("click",function(e){
         foto.setAttribute("src",URLimagen);
     })
 })
+
+//crear una función que elija un número entero al azar entre 1 y 800
+//usar esta función para buscar un pokemon al azar (por número)
+//cuando se cargue, poner la información en el html. incluyendo la foto
+
+
+//gatos
+//https://api.thecatapi.com/v1/images/search
+
+//let dirFinal="https://pokeapi.co/api/v2/pokemon/"+numeroRandom()
+//getJson(dirFinal,funviot....
+

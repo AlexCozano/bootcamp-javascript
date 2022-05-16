@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    border: 2px black dashed;
+    margin: auto;
+    margin-top: 3%;
+    width: 80%;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 60%);
+}
+
+.punteado{
+    border-style: dotted;
+   border-width: 4px;
+   border-color: 660033;
+   background-color: #cc3366;
+   font-family: verdana, arial;
+   font-size: 30px;
+   border-radius: 20px;
+   margin-left: 5%;
+   margin-right: 5%;
+   box-shadow: 0 0 40px 0 rgb(0 0 0 / 60%);
+}
+
+input {
+    background-color: black;
+    color: aquamarine;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+input:hover {
+    background-color: rgb(38, 124, 95);
+    color: black;
+    font-size: 25px;
+    transition: 0.3s;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 95%);
+}
+
+h1 {
+    text-shadow: 2px 3px 3px rgb(3, 3, 9);
+}
