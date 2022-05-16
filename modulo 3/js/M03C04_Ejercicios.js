@@ -45,7 +45,7 @@ botonPokemon.addEventListener("click",function(e){
     console.log(n);
     let url="https://pokeapi.co/api/v2/pokemon/" + n;
     $.getJSON(url,function (data) {
-            nombrePokemon.innerText=data.id +";" +data.name;
+            nombrePokemon.innerText=data.id + ":" +data.name;
             let tipos="";
             for (let i = 0; i < data.types.length; i++) {
                 tipos+=data.types[i].type.name + "  ";
