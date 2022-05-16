@@ -35,4 +35,34 @@ Objeto=(
         raza="angora";
 )
 */
+console.log("---------------------------------------------");
+console.log("consulta API pokemon");
+$.getJSON("https://pokeapi.co/api/v2/pokemon/3", function (data) {
+    let pokemon=data;
+    //console.log(pokemon);
+    //nombre
+    console.log("nombre:" + pokemon.name);
+    //numero (id)
+    console.log("Nº:" + pokemon.id);
+    //tipos (types) [arreglo]
+    for(i=0;i<pokemon.types.length;i++){ 
+        console.log("tipos:" + pokemon.types[i].type.name);
+    }
+    //foto: front_default
+    console.log("foto:" + pokemon.sprites.front_default);
 
+}
+);
+console.log("---------------------------------------------");
+
+//consulta a API del tiempo
+console.log("consulta weather");
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=Santiago&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es",
+function(data) {
+    console.log(data)
+    console.log(data.main.temp)
+})
+
+$.getJSON("https://dog.ceo/api/breeds/image/random",function(data){
+    console.log(data);
+})
