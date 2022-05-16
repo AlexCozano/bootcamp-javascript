@@ -49,6 +49,7 @@ botonPokemon.addEventListener("click",function(e){
             let tipos="";
             for (let i = 0; i < data.types.length; i++) {
                 tipos+=data.types[i].type.name + "  ";
+                console.log(data.types[i].type.name);
             }
             tiposPokemon.innerText=tipos;
             imgPokemon.setAttribute("src", data.sprites.front_dafault);
