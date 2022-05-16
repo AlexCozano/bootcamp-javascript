@@ -34,9 +34,9 @@ function numeroRandom(valorMaximo){
 }
 
 //paso 2.- cargar elementos html
-let imgPokemon= document.querySelector("#imgPokemon");
-let nombrePokemon=document.querySelector("·nombrePokemon");
-let tiposPokemon=document.querySelector("#tiposPOkemon");
+let imgPokemon=document.querySelector("#imgPokemon");
+let nombrePokemon=document.querySelector("#nombrePokemon");
+let tiposPokemon=document.querySelector("#tiposPokemon");
 let botonPokemon=document.querySelector("#botonPokemon");
 
 
@@ -45,7 +45,7 @@ botonPokemon.addEventListener("click",function(e){
     console.log(n);
     let url="https://pokeapi.co/api/v2/pokemon/" + n;
     $.getJSON(url,function (data) {
-            nombrePokemon.innerText=data.id + ":" +data.name;
+            nombrePokemon.innerText=data.id +data.name;
             let tipos="";
             for (let i = 0; i < data.types.length; i++) {
                 tipos+=data.types[i].type.name + "  ";
