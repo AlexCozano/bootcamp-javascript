@@ -27,3 +27,30 @@ btn.addEventListener("click",function(e){
 //let dirFinal="https://pokeapi.co/api/v2/pokemon/"+numeroRandom()
 //getJson(dirFinal,funviot....
 
+//paso 1.- crear la funcion para elegir un numero al azar
+function numeroRandom(valorMaximo){
+    let numero=Math.floor(Math.random()*valorMaximo)+1;
+    return numero;
+}
+
+//paso 2.- cargar elementos html
+let imgPokemon= document.querySelector("#imgPokemon");
+let nombrePokemon=document.querySelector("·nombrePokemon");
+let tiposPokemon=document.querySelector("#tiposPOkemon");
+let botonPokemon=document.querySelector("#botonPokemon");
+
+
+botonPokemon.addEventListener("click",function(e){
+    let n=numeroRandom(800);
+    console.log(n);
+    let url="https://pokeapi.co/api/v2/pokemon/" + n;
+    $.getJSON(url,function (data) {
+            nombrePokemon.innerText=data.id +";" +data.name;
+            let tipos="";
+            for (let i = 0; i < data.types.length; i++) {
+                tipos+=data.types[i].type.name + "  ";
+            }
+            tiposPokemon.innerText=tipos;
+            imgPokemon.setAttribute("src", data.sprites.front_dafault);
+    })
+})
