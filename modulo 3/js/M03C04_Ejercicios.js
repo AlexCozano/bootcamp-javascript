@@ -1,3 +1,4 @@
+let foto=document.querySelector("img");
 //let foto = $("img");
 //let foto=document.querySelector("img");
 //let btn=$("#boton");
@@ -11,7 +12,6 @@ btn.addEventListener("click",function(e){
     $.getJSON("https://dog.ceo/api/breeds/image/random",function(data){
         let obj=data;
         let URLimagen=data.message;
-        let foto=document.querySelector("img");
-;        foto.setAttribute("src",URLimagen);
+        foto.setAttribute("src",URLimagen);
     })
 })
